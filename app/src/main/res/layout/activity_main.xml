@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/kano"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="10"
+        android:maxLines="2"
+        android:text="Kano sauce Saigao"
+        android:textColor="#CA557D"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/at1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:hint="用户名"
+        android:backgroundTint="@color/white"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:background="@drawable/bg_username"
+        />
+
+    <EditText
+        android:id="@+id/at2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:autoSizeMaxTextSize="1dp"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:background="@drawable/bg_username"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_500"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_1"
+            />
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_2"
+            android:text="注册"
+            />
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/fragment_gif_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/gi" />
+
+</LinearLayout>

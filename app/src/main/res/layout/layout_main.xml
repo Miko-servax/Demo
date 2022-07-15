@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/kano"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="45dp"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardPreventCornerOverlap="true"
+            >
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gi"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="昔露"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#00000000"
+        android:layout_marginTop="360dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_main_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="学习"
+            android:background="#00000000"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_main_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="玩一下"
+            android:background="#00000000"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_main_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="锻炼"
+            android:background="#00000000"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_main_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="阅读"
+            android:background="#00000000"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
